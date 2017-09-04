@@ -1,0 +1,45 @@
+{
+  "name": "react-fuse-box-example",
+  "version": "0.0.1",
+  "description": "React FuseBox example with Typescript + Sass",
+  "main": "fuse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rs3d/react-fuse-box-example.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "fusebox",
+    "sass"
+  ],
+  "author": "Robin Schmitz <rob@rs3d.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rs3d/react-fuse-box-example/issues"
+  },
+  "homepage": "https://github.com/rs3d/react-fuse-box-example#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.26",
+    "command-line-args": "^4.0.7",
+    "fuse-box": "2.2.3-beta.20",
+    "fuse-box-typechecker": "git://github.com/fuse-box/fuse-box-typechecker.git",
+    "node-sass": "^4.5.3",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "bootstrap-sass": "^3.3.7",
+    "del": "^3.0.0",
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "tslib": "^1.7.1",
+    "uglify-js": "^3.0.28"
+  }
+}

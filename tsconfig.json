@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "sourceRoot": "./app/",
+        "outDir": "./bundle/",
+        "module": "commonjs",
+        "allowJs": true,
+        "importHelpers": false,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "react", "react-dom", "node"
+        ]
+    },
+    "include": [
+        "**/@types/*.ts",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "**/*.html",
+        "**/*.json",
+        "**/*.css"
+    ]
+}
