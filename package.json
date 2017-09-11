@@ -1,27 +1,24 @@
 {
-  "name": "react-fuse-box-example",
+  "name": "react-fuse-box",
   "version": "0.0.1",
-  "description": "React FuseBox example with Typescript + Sass",
-  "main": "fuse.js",
+  "description": "React with FuseBox and Typescript",
+  "main": "bundle/server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rs3d/react-fuse-box-example.git"
+    "url": "git+ssh://git@bitbucket.org/rawbitz/react-fuse-box.git"
   },
   "keywords": [
     "react",
+    "node",
     "typescript",
-    "fusebox",
-    "sass"
+    "fusebox"
   ],
-  "author": "Robin Schmitz <rob@rs3d.de>",
+  "author": "Robin Schmitz",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rs3d/react-fuse-box-example/issues"
-  },
-  "homepage": "https://github.com/rs3d/react-fuse-box-example#readme",
+  "homepage": "https://bitbucket.org/rawbitz/react-fuse-box#readme",
   "devDependencies": {
     "@types/node": "^8.0.26",
     "command-line-args": "^4.0.7",
@@ -35,6 +32,7 @@
     "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",
     "bootstrap-sass": "^3.3.7",
+    "compression": "^1.7.0",
     "del": "^3.0.0",
     "express": "^4.15.4",
     "react": "^15.6.1",
