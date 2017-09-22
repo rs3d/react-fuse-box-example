@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import './App.scss';
+import { Form } from "./components/Form";
 import { Hello } from "./components/Hello";
 
 
@@ -20,6 +21,7 @@ export default class App extends React.Component<IAppProps, undefined> {
                     <li>Sass</li>
                     <li>Express Dev Server</li>
                 </ul>
+                <Form />
             </div>
         );
     }

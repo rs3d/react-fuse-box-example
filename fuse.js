@@ -20,13 +20,23 @@ const commandLineArgs = require('command-line-args');
 const options = commandLineArgs([{
   name: 'release',
   type: Boolean,
-  defaultOption: true,
+  defaultOption: false,
   defaultValue: false
-}]);
-options.cache = !options.release;
+}, 
+{
+  name: 'open',
+  type: Boolean,
+  defaultValue: false
+}, 
+{
+  name: 'dev',
+  type: Boolean,
+  defaultValue: false
+} 
+]);
 
 const RELEASE = options.release;
-const CACHE = options.cache;
+const CACHE = options.dev ? true : !options.release;
 
 const basePath = 'app';
 const distPath = 'public';
@@ -55,8 +65,10 @@ const fuseBoxConfig = {
   experimentalFeatures: true,
   cache: CACHE,
   sourceMaps: !RELEASE ? {
-    inline: false,
-    sourceRoot: "/app"
+    inline: true,
+    sourceRoot: "/app",
+    project: true,
+    vendor: true
   } : false,
   plugins: [
     EnvPlugin({
@@ -134,7 +146,8 @@ Sparky.task("build-watch", () => {
     }
   });
   fuse.dev({
-    root: false
+    root: false,
+    open: options.open
   }, server => {
     const dist = path.resolve(distPath);
     const app = server.httpServer.app;

@@ -1,6 +1,7 @@
 {
   "extends": "tslint:recommended",
   "rules": {
+    "no-empty-interface": false,
     "curly": false,
     "new-parens": true,
     "no-unused-variable": false,

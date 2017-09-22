@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
         "sourceRoot": "./app/",
-        "outDir": "./bundle/",
+        "outDir": "./public/",
+        "declaration": true,
+        "declarationDir": "./public/",
         "module": "commonjs",
-        "allowJs": true,
+        "allowJs": false,
         "importHelpers": false,
         "moduleResolution": "node",
         "removeComments": true,

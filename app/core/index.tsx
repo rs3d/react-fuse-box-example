@@ -1,6 +1,6 @@
 import App from './App';
 
-console.log({ process });
+console.log({ process, App });
 
 export {
   App
