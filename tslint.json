@@ -2,6 +2,7 @@
   "extends": "tslint:recommended",
   "rules": {
     "arrow-parens": false,
+    "no-shadowed-variable": false,
     "no-empty-interface": false,
     "curly": false,
     "new-parens": true,
